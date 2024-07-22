@@ -1,8 +1,10 @@
 "use client";
 
+import Link from "next/link";
+
 export default function Header() {
   return (
-    <nav className="block w-full max-w-screen-xl px-6 py-3 mx-auto text-[#37447E] bg-white border shadow-md rounded-xl border-white/80 bg-opacity-80 backdrop-blur-2xl backdrop-saturate-200 ">
+    <nav className="block w-full max-w-6xl px-6 py-3 mx-auto text-[#37447E] bg-white border shadow-md rounded-xl border-white/80 bg-opacity-80 backdrop-blur-2xl backdrop-saturate-200 ">
       <div className="flex items-center justify-between text-blue-gray-900">
         <a
           href="#"
@@ -13,28 +15,28 @@ export default function Header() {
         <div className="hidden lg:block">
           <ul className="flex flex-col gap-2 my-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
             <li className="block p-1 font-sans text-base antialiased font-medium leading-normal text-blue-gray-900">
-              <a
-                href="#"
+              <Link
+                href="/blog"
                 className="flex items-center transition-colors hover:text-blue-500"
               >
                 Blog
-              </a>
+              </Link>
             </li>
             <li className="block p-1 font-sans text-base antialiased font-medium leading-normal text-blue-gray-900">
-              <a
-                href="#"
+              <Link
+                href="/"
                 className="flex items-center transition-colors hover:text-blue-500"
               >
                 About
-              </a>
+              </Link>
             </li>
             <li className="block p-1 font-sans text-base antialiased font-medium leading-normal text-blue-gray-900">
-              <a
-                href="#"
+              <Link
+                href="/contact"
                 className="flex items-center transition-colors hover:text-blue-500"
               >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
