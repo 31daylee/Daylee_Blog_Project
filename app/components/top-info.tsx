@@ -9,6 +9,8 @@ export default function TopInfo() {
           <Image src={logoImage} width={600} height={500} alt="daylee Logo" />
         </div>
         <p className="text-md text-gray-700">
+          Welcome to my Web Development Portofolio!
+          <br />
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
           commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
           et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
