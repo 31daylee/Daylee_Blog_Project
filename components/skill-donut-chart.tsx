@@ -50,7 +50,7 @@ const SkillsChart: React.FC = () => {
   const options = {};
 
   return (
-    <div className="flex justify-center space-x-8 ">
+    <div className="flex justify-center space-x-8 mb-[200px]">
       <div className="shadow-lg rounded-lg overflow-hidden w-[400px] h-[400px]">
         <div className="py-3 px-5 bg-gray-50 text-center">Front-end</div>
         <div className="p-5">

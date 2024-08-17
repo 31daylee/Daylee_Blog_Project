@@ -13,6 +13,19 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        roboto: ["var(--roboto)"],
+      },
+      borderRadius: {
+        custom: "50px",
+      },
+      keyframes: {
+        scroll: {
+          "0%": { opacity: "0" },
+          "10%": { transform: "translateY(0)", opacity: "1" },
+          "100%": { transform: "translateY(15px)", opacity: "0" },
+        },
+      },
     },
   },
   plugins: [],

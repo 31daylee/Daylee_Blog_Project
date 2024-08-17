@@ -1,0 +1,73 @@
+/* project-rolling.module.css */
+
+.wrapper {
+  margin-bottom: 5%;
+  overflow: hidden;
+  position: relative;
+}
+
+.rolling_container {
+  display: flex;
+  width: 100%;
+}
+
+.rolling_wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  width: calc(200%);
+  animation: infiniteScroll 15s linear infinite;
+}
+
+.stop {
+  animation-play-state: paused;
+}
+
+.image_container {
+  flex: 0 0 auto;
+  margin-top: 100px;
+  position: relative;
+}
+
+.item_img {
+  max-width: 90%;
+  display: block;
+  border-radius: 20px;
+  border: 1px solid #e2e5e9;
+  background: #fdfaf7;
+  transition: transform 0.3s ease;
+}
+
+.image_container:hover .item_img {
+  transform: translateY(-54px);
+}
+.name {
+  font-weight: bold;
+  font-size: larger;
+  color: #004aad;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0;
+}
+
+@keyframes infiniteScroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 1440px) {
+  .item_img {
+    width: 100%;
+  }
+}

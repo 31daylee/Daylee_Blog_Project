@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  background-color: #fff8ed;
+  /* font-family: Montserrat, Pretendard, -apple-system, Apple SD Gothic Neo,
+    맑은 고딕, Malgun Gothic, sans-serif; */
+  font-family: "Gothic A1", sans-serif;
+  font-style: normal;
+  letter-spacing: -0.02rem;
+  min-width: var(--m-min-width);
+}

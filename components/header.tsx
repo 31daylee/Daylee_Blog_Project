@@ -8,13 +8,13 @@ export default function Header() {
       <div className="flex items-center justify-between text-blue-gray-900">
         <a
           href="#"
-          className="mr-4 block cursor-pointer py-1.5 font-sans text-2xl font-extrabold leading-relaxed tracking-normal text-inherit antialiased"
+          className="mr-4 block cursor-pointer py-1.5  text-2xl font-extrabold leading-relaxed tracking-normal text-inherit antialiased"
         >
           DAYLEE
         </a>
         <div className="hidden lg:block">
           <ul className="flex flex-col gap-2 my-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-            <li className="block p-1 font-sans text-base antialiased font-medium leading-normal text-blue-gray-900">
+            <li className="block p-1  text-base antialiased font-medium leading-normal text-blue-gray-900">
               <Link
                 href="/blog"
                 className="flex items-center transition-colors hover:text-blue-500"
@@ -22,7 +22,7 @@ export default function Header() {
                 Blog
               </Link>
             </li>
-            <li className="block p-1 font-sans text-base antialiased font-medium leading-normal text-blue-gray-900">
+            <li className="block p-1  text-base antialiased font-medium leading-normal text-blue-gray-900">
               <Link
                 href="/"
                 className="flex items-center transition-colors hover:text-blue-500"
@@ -30,7 +30,7 @@ export default function Header() {
                 About
               </Link>
             </li>
-            <li className="block p-1 font-sans text-base antialiased font-medium leading-normal text-blue-gray-900">
+            <li className="block p-1  text-base antialiased font-medium leading-normal text-blue-gray-900">
               <Link
                 href="/contact"
                 className="flex items-center transition-colors hover:text-blue-500"
@@ -41,7 +41,7 @@ export default function Header() {
           </ul>
         </div>
         <button
-          className="relative ml-auto h-6 max-h-[40px] w-6 max-w-[40px] select-none rounded-lg text-center align-middle font-sans text-xs font-medium uppercase text-inherit transition-all hover:bg-transparent focus:bg-transparent active:bg-transparent disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:hidden"
+          className="relative ml-auto h-6 max-h-[40px] w-6 max-w-[40px] select-none rounded-lg text-center align-middle  text-xs font-medium uppercase text-inherit transition-all hover:bg-transparent focus:bg-transparent active:bg-transparent disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:hidden"
           type="button"
         >
           <span className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">

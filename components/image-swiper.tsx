@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-cards";
 import { EffectCards } from "swiper/modules";
-import styles from "../styles/image-swiper.module.css";
+import styles from "@/app/styles/image-swiper.module.css";
 export default function SwiperComponent() {
   return (
     <Swiper

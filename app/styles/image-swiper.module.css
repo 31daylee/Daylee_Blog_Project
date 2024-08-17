@@ -7,7 +7,7 @@
   height: 500px;
 }
 .slide1 {
-  background-image: url("../asserts/past-info.jpg");
+  background-image: url("/img/past-info.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -20,7 +20,7 @@
 }
 
 .slide2 {
-  background-image: url("../asserts/univ.jpg");
+  background-image: url("/img/univ.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
