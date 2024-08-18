@@ -32,7 +32,7 @@ export default function Introduction() {
   return (
     <motion.div
       className={
-        "relative container mx-auto sm:h-[300px] w-full flex flex-col justify-center mt-[350px] px-16 py-10 text-black bg-black opacity-80"
+        "relative container mx-auto sm:h-[300px] w-full flex flex-col justify-center mt-[350px] px-16 py-10 text-black opacity-80"
       }
       variants={container}
       initial="standBy"
@@ -41,8 +41,8 @@ export default function Introduction() {
     >
       <Image
         src={"/img/banner.jpg"}
-        alt="background image for info rounded-custom"
-        className="object-cover -z-10 ro"
+        alt="background image for info"
+        className="object-cover -z-10 rounded-[40px]"
         sizes={"50vw"}
         priority
         fill={true}
@@ -58,16 +58,18 @@ export default function Introduction() {
         </div>
         <div className="flex flex-col items-end pt-3">
           <p>
-            고객의 요구를 이해하고 반영하는 데 중점을 두며 개발하고 있습니다.
+            저는 코드의 가독성과 효율성을 중시하며 협엽 시 적극적인
+            커뮤니케이션을 통해 팀의 목표를 함께 달성해 나가고 있습니다.
           </p>
           <p>
             프론트엔드와 백엔드에서의 기술적 역량으로 직관적이고 매력적인 웹
             애플리케이션을 개발합니다.
           </p>
           <p>
-            협업과 커뮤니케이션을 통해, 시용자의 니즈를 정확히 반영한 솔루션을
-            제공합니다.
+            사용자에게 최상의 경험을 제공하고자 하는 팀과 함께 혁신적인 솔루션을
+            만들어 나가기를 기대합니다!
           </p>
+          <p>함께 성장하며 프로젝트를 성공적으로 완성하기를 바랍니다 😊</p>
         </div>
         <a
           href="https://2206.notion.site/16dd794421904e48a0cac9115a306678"

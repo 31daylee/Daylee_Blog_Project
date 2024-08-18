@@ -19,7 +19,6 @@ function TimeLineCard({ timeLineData }: { timeLineData: TimeLineData }) {
         className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
         initial={{ opacity: 0.1 }}
         whileInView={{ opacity: 1 }}
-        // viewport={{ once: true }}
         transition={{
           ease: "easeIn",
           duration: 0.6,
@@ -28,7 +27,6 @@ function TimeLineCard({ timeLineData }: { timeLineData: TimeLineData }) {
       <motion.div
         initial={{ opacity: 0.5, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
-        // viewport={{ once: true }}
         transition={{
           ease: "easeOut",
           duration: 0.6,

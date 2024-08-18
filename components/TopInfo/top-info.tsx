@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import ScrollDown from "./ScrollDown";
+import ScrollDownArrow from "./scroll-down-arrow";
 
 export default function TopInfo() {
   const [animateImage, setAnimateImage] = useState(false);
@@ -69,8 +69,8 @@ export default function TopInfo() {
             />
           </div>
         </div>
-        <div className="my-10">
-          <ScrollDown />
+        <div className="mt-16 pt-10 flex justify-center">
+          <ScrollDownArrow />
         </div>
       </div>
     </div>

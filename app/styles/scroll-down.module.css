@@ -1,13 +1,76 @@
-@keyframes blink {
-  0%,
-  100% {
-    opacity: 1;
+.scroll {
+  width: 60px;
+  height: 60px;
+  border: 2px solid;
+  border-radius: 50%;
+  border-color: #6b7280;
+  position: relative;
+  animation: down 1.5s infinite;
+  -webkit-animation: down 1.5s infinite;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 18px;
+    width: 18px;
+    height: 18px;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    border-color: #6b7280;
+    transform: rotate(-45deg);
   }
-  50% {
-    opacity: 0;
+}
+.scroll.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+@keyframes down {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(15px);
+  }
+  40% {
+    transform: translate(0);
   }
 }
 
-.animate-blink {
-  animation: blink 2s infinite;
+@-webkit-keyframes down {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(15px);
+  }
+  40% {
+    transform: translate(0);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    height: 40px;
+  }
+  30% {
+    height: 70px;
+  }
+  60% {
+    height: 40px;
+  }
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    height: 40px;
+  }
+  30% {
+    height: 70px;
+  }
+  60% {
+    height: 40px;
+  }
 }
