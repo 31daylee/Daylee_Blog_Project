@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Noto_Sans_KR } from "next/font/google";
+import { Exo_2 } from "next/font/google";
 import "./globals.css";
 
-const notoSansKr = Noto_Sans_KR({
+const archivo = Exo_2({
   subsets: ["latin"],
-  weight: ["100", "400", "700", "900"],
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={notoSansKr.className}>
+      <body className={archivo.className}>
         {/* <Header /> */}
         {children}
       </body>
