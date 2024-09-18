@@ -69,7 +69,7 @@ export default function TopInfo() {
             />
           </div>
         </div>
-        <div className="mt-16 pt-10 flex justify-center">
+        <div className="mt-16 pt-10 pb-[100px] flex justify-center">
           <ScrollDownArrow />
         </div>
       </div>

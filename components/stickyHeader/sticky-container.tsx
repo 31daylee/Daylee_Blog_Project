@@ -1,19 +1,19 @@
+import Info2 from "@/components/info2/info2";
+
 interface Props {
   children: React.ReactNode;
 }
 
 export default function StickyContainer({ children }: Props) {
   return (
-    <section className={"w-full"}>
-      <StickyContent title="test1">
+    <section className={"w-full border-t-2 border-[#004aad]"}>
+      <StickyContent title="WHO AM I">
         <div className={"flex gap-x-10"}>
-          <div>2</div>
-          <div>1</div>
-          <div>3</div>
+          <Info2 />
         </div>
       </StickyContent>
-      <StickyContent title="test2">
-        <div className={"flex gap-x-3"}>
+      <StickyContent title="HOW I WORK">
+        <div className={"flex gap-x-10 border-t-2 border-[#004aad]"}>
           <div className="order-last flex justify-center items-center text-[3rem]">
             Test
           </div>
@@ -30,6 +30,20 @@ export default function StickyContainer({ children }: Props) {
           </div>
         </div>
       </StickyContent>
+      <StickyContent title="CERTIFICATION">
+        <div className={"flex gap-x-10 border-t-2 border-[#004aad]"}>
+          <div>2</div>
+          <div>1</div>
+          <div>3</div>
+        </div>
+      </StickyContent>
+      <StickyContent title="SKILLS">
+        <div className={"flex gap-x-10 border-t-2 border-[#004aad]"}>
+          <div>2</div>
+          <div>1</div>
+          <div>3</div>
+        </div>
+      </StickyContent>
     </section>
   );
 }
@@ -41,26 +55,19 @@ function StickyContent({
   title: string;
   children: React.ReactNode;
 }) {
-  const titleSize = 100;
   return (
-    <div
-      className={`relative flex justify-start items-start pb-[${titleSize}px]`}
-    >
-      <div className={`sticky top-0 h-[${titleSize}px]`}>
+    <div className={`relative flex justify-start items-start pb-[160px]`}>
+      <div className={`sticky top-0 h-[160px]`}>
         <div
-          className={`transform rotate-90 w-[${titleSize * 2}px] h-[${
-            titleSize * 2
-          }px] flex justify-center items-center bg-slate-300 text-[3rem]`}
+          className={`transform rotate-90 w-[320px] h-[320px] flex justify-center items-center text-5xl font-semibold text-[#004aad]`}
         >
           {title}
         </div>
       </div>
       <div
-        className={`absolute left-[${
-          2 * titleSize
-        }px] top-0 w-[1px] bg-[#004aad] h-full`}
+        className={`absolute left-[320px] top-0 w-[1.8px] bg-[#004aad] h-full`}
       ></div>
-      <div className="grow basis-0 px-auto bg-slate-600 min-h-[600px] text-white">
+      <div className="grow basis-0 px-auto min-h-[600px] text-black">
         {children}
       </div>
     </div>

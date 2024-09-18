@@ -1,9 +1,8 @@
-import Image from "next/image";
 import Rolling from "./project-rolling";
 
 export default function Projects() {
   return (
-    <div className="container mx-auto text-center mt-20 my-20">
+    <div className="container mx-auto text-center">
       <p className="block antialiased text-xl font-normal leading-relaxed text-inherit mx-auto w-full !text-gray-500 lg:w-10/12">
         From Concepts to Realities
       </p>

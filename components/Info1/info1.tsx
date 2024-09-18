@@ -33,7 +33,6 @@ const item: Variants = {
 };
 
 export default function Introduction() {
-  //TODO: div 렌더링 이후에 컨텐츠 애니메이션 적용해서 버그 고치기
   return (
     <div className={notoSansKr.className}>
       <motion.div

@@ -3,7 +3,6 @@ import Info1 from "@/components/Info1/info1";
 import TopInfo from "@/components/TopInfo/top-info";
 import Info2 from "@/components/info2/info2";
 import Skills from "@/components/skills/skills";
-import SkillsChart from "@/components/skills/skill-donut-chart";
 import Projects from "@/components/projects";
 import StickyContainer from "@/components/stickyHeader/sticky-container";
 
@@ -17,17 +16,10 @@ export default function About() {
       <MarginContainer>
         <TopInfo />
       </MarginContainer>
-      <Suspense fallback={"<div>...</div>"}>
-        <Info1 />
-      </Suspense>
-      <MarginContainer>
-        <Info2 />
-      </MarginContainer>
       <StickyContainer>
         <div>good</div>
       </StickyContainer>
       <BgWhiteContainer>
-        <Skills />
         <Projects />
       </BgWhiteContainer>
       <BgBlueContainer>
@@ -45,7 +37,7 @@ function BgWhiteContainer({ children }: { children: React.ReactNode }) {
 }
 function BgBlueContainer({ children }: { children: React.ReactNode }) {
   return (
-    <div className="w-full flex flex-col bg-[#004aad] opacity-[90%]">
+    <div className="w-full flex flex-col bg-[#004aad] opacity-[90%] h-[350px]">
       {children}
     </div>
   );
