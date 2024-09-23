@@ -8,7 +8,7 @@ export default function Projects() {
       </p>
       <div className="relative flex items-center justify-center ">
         <hr className="absolute inset-6 border-t-2 border-[#004aad]" />
-        <h1 className="relative text-6xl font-semibold text-[#004aad] px-4 bg-[#fff8ed]">
+        <h1 className="relative text-6xl font-semibold text-[#004aad] px-4 bg-[#ffffff]">
           My Project
         </h1>
       </div>

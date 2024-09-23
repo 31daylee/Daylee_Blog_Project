@@ -12,9 +12,12 @@ export default function TopInfo() {
   }, []);
 
   return (
-    <div className="flex items-center mt-[180px]">
+    <div
+      className="flex items-center bg-custom-bg bg-cover bg-center" // Add your background image class here
+      style={{ minHeight: "100vh" }} // Ensure the background covers the full section height
+    >
       <div className="w-full">
-        <div className="flex justify-evenly space-x-10">
+        <div className="flex justify-evenly space-x-10 mt-[150px]">
           <div
             className={`relative flex flex-col justify-center grow basis-0 transition-transform duration-1000 ease-out ${
               animateImage ? "translate-x-0" : "-translate-x-full"
@@ -23,9 +26,9 @@ export default function TopInfo() {
           >
             <p className="text-lg mb-4 font-bold">PORTOFOLIO</p>
             <Image
-              src="/img/title-name.png"
+              src="/img/name-logo.png"
               layout="responsive"
-              width={200}
+              width={400}
               height={200}
               alt="daylee Logo"
               className="object-cover w-full"
@@ -33,8 +36,8 @@ export default function TopInfo() {
             <ul className="list-none p-0">
               <li className="border-b border-gray-400 py-2">
                 <Link
-                  href="/"
-                  className="flex items-center transition-colors hover:text-blue-500"
+                  href="/about"
+                  className="flex items-center transition-colors hover:text-white"
                 >
                   ABOUT
                 </Link>
@@ -42,32 +45,31 @@ export default function TopInfo() {
               <li className="border-b border-gray-400 py-2">
                 <Link
                   href="/blog"
-                  className="flex items-center transition-colors hover:text-blue-500"
+                  className="flex items-center transition-colors hover:text-white"
                 >
                   BLOG
                 </Link>
               </li>
               <li className="border-b border-gray-400 py-2">
                 <Link
-                  href="
-                /contact"
-                  className="flex items-center transition-colors hover:text-blue-500"
+                  href="/contact"
+                  className="flex items-center transition-colors hover:text-white"
                 >
                   CONTACT
                 </Link>
               </li>
             </ul>
           </div>
-          <div className="w-[350px]">
-            <Image
+          {/* <div className="w-[350px]">
+            {<Image
               src="/img/current-info.jpg"
               layout="responsive"
               width={200}
               height={200}
               alt="photo"
               className="object-cover w-full rounded-lg"
-            />
-          </div>
+            /> }
+          </div> */}
         </div>
         <div className="mt-16 pt-10 pb-[100px] flex justify-center">
           <ScrollDownArrow />

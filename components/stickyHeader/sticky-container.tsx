@@ -1,14 +1,14 @@
 import Info2 from "@/components/info2/info2";
+import Info1 from "@/components/Info1/info1";
 
-interface Props {
-  children: React.ReactNode;
-}
-
-export default function StickyContainer({ children }: Props) {
+export default function StickyContainer() {
   return (
     <section className={"w-full border-t-2 border-[#004aad]"}>
       <StickyContent title="WHO AM I">
-        <div className={"flex gap-x-10"}>
+        <div>
+          <Info1 />
+        </div>
+        <div>
           <Info2 />
         </div>
       </StickyContent>
@@ -67,7 +67,7 @@ function StickyContent({
       <div
         className={`absolute left-[320px] top-0 w-[1.8px] bg-[#004aad] h-full`}
       ></div>
-      <div className="grow basis-0 px-auto min-h-[600px] text-black">
+      <div className="grow basis-0 px-auto min-h-[100px] text-black">
         {children}
       </div>
     </div>
