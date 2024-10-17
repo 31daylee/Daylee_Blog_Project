@@ -1,5 +1,6 @@
 import Info2 from "@/components/info2/info2";
 import Info1 from "@/components/Info1/info1";
+import Skills from "../skills/skills";
 
 export default function StickyContainer() {
   return (
@@ -39,9 +40,7 @@ export default function StickyContainer() {
       </StickyContent>
       <StickyContent title="SKILLS">
         <div className={"flex gap-x-10 border-t-2 border-[#004aad]"}>
-          <div>2</div>
-          <div>1</div>
-          <div>3</div>
+          <Skills />
         </div>
       </StickyContent>
     </section>

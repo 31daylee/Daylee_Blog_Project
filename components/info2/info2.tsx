@@ -9,7 +9,7 @@ export default function Introduction() {
           <div className="mr-20 grow basis-0">
             <TimeLine />
           </div>
-          <div className="w-[350px]">
+          <div className="w-[470px]">
             <ImageSwiper />
           </div>
         </div>
