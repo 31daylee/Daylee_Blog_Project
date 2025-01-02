@@ -1,4 +1,3 @@
-import TopInfo from "@/components/TopInfo/top-info";
 import Projects from "@/components/projects";
 import StickyContainer from "@/components/stickyHeader/sticky-container";
 
@@ -13,7 +12,6 @@ export default function About() {
         <BgWhiteContainer>
           <StickyContainer />
           <Projects />
-          <div>test</div>
         </BgWhiteContainer>
       </PaddingContainer>
     </div>

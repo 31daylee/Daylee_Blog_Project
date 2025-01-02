@@ -13,6 +13,9 @@ export default function TimeLine() {
 }
 
 function TimeLineCard({ timeLineData }: { timeLineData: TimeLineData }) {
+  // description을 '•' 구분자로 나누기
+  const descriptionParagraphs = timeLineData.description.split('•');
+
   return (
     <li className="mb-10 ms-4">
       <motion.div
@@ -35,12 +38,16 @@ function TimeLineCard({ timeLineData }: { timeLineData: TimeLineData }) {
         <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
           {timeLineData.time}
         </time>
-        <h3 className="text-lg font-semibold text-gray-900">
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
           {timeLineData.title}
         </h3>
-        <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-          {timeLineData.description}
-        </p>
+
+        {/* description을 문단별로 출력 */}
+        {descriptionParagraphs.map((paragraph, index) => (
+          <p key={index} className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+            {paragraph.trim()}
+          </p>
+        ))}
       </motion.div>
     </li>
   );
